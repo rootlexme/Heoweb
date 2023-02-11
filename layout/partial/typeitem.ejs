@@ -1,0 +1,23 @@
+<div class="product-group need-padding" id="<%= name %>">
+    <h2 class="group-title"><%= type.title %></h2>
+    <span class="group-description"><%- type.desc %></span>
+    <div class="group-items">
+        <% for (const i in type.list){ %>
+            <% let item = type.list[i] %>
+            <div class="group-item">
+                <a class="group-item-icon" href="<%= url_for(item.button.url) %>">
+                    <img class="group-item-icon-img" src="<%= item.img %>" alt="product-icon" title="product-icon">
+                </a>
+                <div class="group-info-group">
+                    <div class="group-info">
+                        <a class="title" href="<%= url_for(item.button.url) %>"><%= i %></a>
+                        <a class="discription" href="<%= url_for(item.button.url) %>"><%- item.text %></a>
+                    </div>
+                    <div class="group-info-button">
+                        <a class="linkbutton" href="<%= url_for(item.button.url) %>"><%= item.button.text %></a>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>

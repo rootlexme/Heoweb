@@ -1,0 +1,18 @@
+<div class="product-banner" id="<%= name %>">
+    <div class="banner-info need-padding">
+<!--        <span class="tips">新品</span>-->
+        <span class="title"><%= type.title %></span>
+        <div class="banner-discription-group">
+            <span class="description"><%- type.desc %></span>
+        </div>
+        <div class="link-group">
+            <a class="primary-button" href="<%= url_for(type.buttonLeft.url) %>"><%= type.buttonLeft.text %></a>
+            <% if (type.buttonRight.enable){ %>
+                <a class="second-link" href="<%= url_for(type.buttonRight.url) %>"><%- type.buttonRight.text %></a>
+            <% } %>
+        </div>
+    </div>
+    <div class="banner-pic">
+        <img class="banner-pic-img" src="<%= type.img %>" alt="banner image">
+    </div>
+</div>

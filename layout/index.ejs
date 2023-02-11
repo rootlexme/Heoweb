@@ -1,0 +1,21 @@
+<%- partial('partial/nav') %>
+<% if (theme.notice.enable){ %>
+    <%- partial('partial/notice') %>
+<% } %>
+<% if (theme.firstWarp.enable){ %>
+<%- partial('partial/firstwarp') %>
+<% } %>
+<% for (const i in theme.page){ %>
+    <% let type = theme.page[i] %>
+    <% switch (type.type) {
+    case 'warp': %>
+        <%- partial('partial/typewarp', {type: type.warp, name: i}) %>
+    <% break;
+    case 'item': %>
+    <%- partial('partial/typeitem', {type: type.item, name: i}) %>
+    <% break;
+        default:
+            break; } %>
+
+<% } %>
+<%- partial('partial/footer') %>

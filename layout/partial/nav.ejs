@@ -1,0 +1,34 @@
+<div class="nav">
+    <div class="nav-content">
+        <div class="nav-left">
+            <a href="/" class="site-logo">
+                <img src="<%= url_for(theme.site.avatar) %>" alt="logo" class="site-logo-img">
+                <span class="site-name"><%= theme.site.name %></span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <% for (const i in theme.nav){ %>
+                <% let nav = theme.nav[i] %>
+                <% if (nav.url === '/'){ %>
+                    <% const to = "javascript:heoWeb.scrollTo('" + i + "')" %>
+                    <a href="<%- to %>" class="nav-item"><%= i %></a>
+                <% }else { %>
+                    <a href="<%= url_for(nav.url) %>" class="nav-item"><%= i %></a>
+                <% } %>
+            <% } %>
+            <a class="nav-menu" id="nav-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>            </a>
+        </div>
+    </div>
+</div>
+<div class="menu-list" id="menu-list">
+    <% for (const i in theme.nav){ %>
+        <% let nav = theme.nav[i] %>
+        <% if (nav.url === '/'){ %>
+            <% const to = "javascript:heoWeb.scrollTo('" + i + "')" %>
+            <a href="<%= to %>" class="nav-item"><%= i %></a>
+        <% }else { %>
+            <a href="<%= url_for(nav.url) %>" class="nav-item"><%= i %></a>
+        <% } %>
+    <% } %>
+</div>
