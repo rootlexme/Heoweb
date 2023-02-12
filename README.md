@@ -23,9 +23,12 @@
 <!-- ABOUT THE PROJECT -->
 ## 关于此项目
 
+![screenshot](/screenshot.webp)
+
 此项目是基于原项目 [zhheo/HeoWeb](https://github.com/zhheo/HeoWeb) 进行修改，并移植至Hexo
 
 ## 安装
+### 请确保在安装之前您有Hexo运行环境
 
  ```BASH
 git clone -b master https://github.com/rootlexblog/Heoweb.git themes/heoweb
@@ -34,9 +37,18 @@ git clone -b master https://github.com/rootlexblog/Heoweb.git themes/heoweb
 <!-- USAGE EXAMPLES -->
 ## 使用
 
-1.修改`config`主题配置
+1.修改根目录的`config`配置
+
+```yaml
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: heoweb
+```
+
 <br>
-2.完成主题配置
+2.在主题根目录创建一个`_config.heoweb.yml`配置文件
+3.将`/themes/heoweb`中的`_config.yml`粘贴到`_config.heoweb.yml`中
 
 <!-- ROADMAP -->
 ## Roadmap
