@@ -60,12 +60,12 @@ page:
           button: #按钮相关配置
             text: 访问
             url: https://cdn1.tianli0.top/
-        Heohome:
+        HeoWeb:
           img: /img/heo.png
           text: 基于Heo的主页开发的Hexo主题
           button:
             text: Github
-            url: /
+            url: https://github.com/rootlexblog/Heoweb
         Kenny:
           img: /img/kenny.png
           text: 一个基于Tony开发的Hugo主题
