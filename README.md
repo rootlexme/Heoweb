@@ -14,7 +14,7 @@
     <br />
     <a href="https://zhheo.com/">原项目 Demo</a>
     ·
-    <a href="https://nalex.top/">此 Demo</a>
+    <a href="https://www.nalex.top/">此 Demo</a>
     ·
     <a href="https://github.com/rootlexblog/Heoweb/issues">Bug反馈</a>
   </p>
