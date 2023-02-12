@@ -23,7 +23,7 @@
 <!-- ABOUT THE PROJECT -->
 ## 关于此项目
 
-![screenshot](/screenshot.webp)
+![screenshot](/shot.webp)
 
 此项目是基于原项目 [zhheo/HeoWeb](https://github.com/zhheo/HeoWeb) 进行修改，并移植至Hexo
 
