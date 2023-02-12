@@ -47,8 +47,9 @@ theme: heoweb
 ```
 
 <br>
-2.在主题根目录创建一个`_config.heoweb.yml`配置文件
-3.将`/themes/heoweb`中的`_config.yml`粘贴到`_config.heoweb.yml`中
+2.在主题根目录创建一个 _config.heoweb.yml 配置文件
+<br>
+3.将 /themes/heoweb 中的 _config.yml 粘贴到 _config.heoweb.yml 中
 
 <!-- ROADMAP -->
 ## Roadmap
