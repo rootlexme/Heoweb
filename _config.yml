@@ -20,15 +20,15 @@ nav:
 # 顶部可弹出通知
 notice:
   enable: true #开关
-  url: / #通知链接
-  text: azazazazaz #通知内容
+  url: https://github.com/rootlexblog/Heoweb #通知链接
+  text: 项目已开源，点击查看此项目 #通知内容
 
 # 首屏
 firstWarp:
   enable: true #开关
   title: 开源改变世界 #首屏标题 可使用 <br> 换行
   text: 努力为开源事业出一份力<br>为这个世界出一份力 #可使用 <br> 换行
-  button: 关于我 #按钮输入false可关闭
+  button: false #按钮输入false可关闭
   buttonUrl: / #按钮链接
   img: /img/avatar.webp
 
@@ -72,6 +72,20 @@ page:
           button:
             text: Github
             url: https://github.com/Kindle-deep/hugo-theme-Kenny
+  Cdn:
+    type: warp #页面类型warp/item
+    warp:
+      bg: "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)" #页面背景颜色，仅warp可以填写，当为空时输出默认
+      title: TianliCdn
+      desc: 一个强大且免费的静态资源加速服务
+      buttonLeft: #左侧按钮
+        text: 访问
+        url: https://cdn1.tianli0.top/
+      buttonRight: #右侧按钮
+        enable: false
+        text: Pix主题
+        url: https://pixit.cn/
+      img: /img/cdn.png #图片
   媒体:
     type: item
     item:
@@ -84,14 +98,8 @@ page:
           button: #按钮相关配置
             text: 访问
             url: https://github.com/rootlexblog
-        邮件:
-          img: /img/mail.png
-          text: 发送邮件联系我
-          button:
-            text: Send
-            url: mailto:a@nalex.top
         网站:
-          img: /img/site.png
+          img: /img/avatar.webp
           text: 通过网站评论与我联系
           button:
             text: 访问

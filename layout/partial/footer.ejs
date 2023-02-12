@@ -1,8 +1,10 @@
 <div class="footer">
     <div class="footer-content need-padding">
         <span class="info">Copyright © <%= new Date().getFullYear() %> <%= theme.site.name %> 保留所有权利。</span>
-        <% if (theme.site.icp !== ''){ %>
+        <% if (theme.site.icp){ %>
             <div class="info-group"><a class="info" href="https://beian.miit.gov.cn/" target="_blank"><%= theme.site.icp %></a><a class="info" href="https://github.com/zhheo/HeoWeb" target="_blank">主题：HeoWeb</a></div>
+        <% }else { %>
+            <a class="info" href="https://github.com/zhheo/HeoWeb" target="_blank">主题：HeoWeb</a>
         <% } %>
     </div>
 </div>

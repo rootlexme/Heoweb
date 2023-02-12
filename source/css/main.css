@@ -143,8 +143,7 @@ img.site-logo-img {
 }
 
 .banner-img {
-    width: 300px;
-    height: 300px;
+    width: 380px;
     max-width: 100%;
     animation: floating 4s ease-in-out infinite;
     pointer-events:none;
@@ -428,7 +427,8 @@ a.second-link:hover {
     max-width: 968px;
     width: 90%;
     margin: auto;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .inline-word {
