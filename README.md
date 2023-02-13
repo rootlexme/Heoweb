@@ -4,7 +4,7 @@
     <img src="/source/img/heo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Heoweb</h3>
+<h3 align="center">Hexo - Heoweb</h3>
 
   <p align="center">
     一个基于Heoweb开发的Hexo主页主题
@@ -14,7 +14,7 @@
     <br />
     <a href="https://zhheo.com/">原项目 Demo</a>
     ·
-    <a href="https://www.nalex.top/">此 Demo</a>
+    <a href="https://www.nalex.top/">此项目 Demo</a>
     ·
     <a href="https://github.com/rootlexblog/Heoweb/issues">Bug反馈</a>
   </p>
@@ -46,10 +46,9 @@ git clone -b master https://github.com/rootlexblog/Heoweb.git themes/heoweb
 theme: heoweb
 ```
 
-<br>
-2.在主题根目录创建一个 `_config.heoweb.yml` 配置文件
-<br>
-3.将 `/themes/heoweb` 中的 `_config.yml` 粘贴到 `_config.heoweb.yml` 中
+2.在主题根目录创建一个`_config.heoweb.yml`配置文件
+
+3.将`/themes/heoweb`中的`_config.yml`粘贴到`_config.heoweb.yml`中
 
 <!-- CONTRIBUTING -->
 ## ✨ Contributing
