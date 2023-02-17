@@ -8,5 +8,8 @@
         <%- body %>
         <script type="text/javascript" src="/js/simpleParallax.min.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
+        <% if (theme.extends.body) for (const i of theme.extends.body){ %>
+            <%- i %>
+        <% } %>
     </body>
 </html>

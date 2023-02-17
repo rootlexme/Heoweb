@@ -104,3 +104,9 @@ page:
           button:
             text: 访问
             url: https://blog.nalex.top/
+
+extends: # 插入额外代码 如：统计，广告等
+  head: # 在head中插入
+    - <script></script>
+  body: # 在body中插入
+

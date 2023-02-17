@@ -16,5 +16,8 @@
 <link rel="bookmark" href="<%= url_for(theme.site.siteIcon) %>">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<%= url_for(theme.site.siteIcon) %>">
 <meta name="description" content="<%= config.description %>">
-<!--<meta name="theme-color" content="#1C1C1F">-->
+<meta name="theme-color" content="#1C1C1F">
+<% if (theme.extends.head) for (const i of theme.extends.head){ %>
+    <%- i %>
+<% } %>
 <!--<link rel="stylesheet" href="/font/iconfont.css">-->
