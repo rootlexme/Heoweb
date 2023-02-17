@@ -33,8 +33,8 @@ firstWarp:
   img: /img/avatar.webp
 
 #页面设置
-page:
-  博客:
+page: #您可以随意调整顺序或增加组件
+  博客: # 组件
     type: warp #页面类型warp/item
     warp:
       bg: '' #页面背景，仅warp可以填写，当为空时输出默认
@@ -48,7 +48,7 @@ page:
         text: Pix主题
         url: https://pixit.cn/
       img: /img/boke.webp #图片
-  项目:
+  项目: # 组件
     type: item
     item:
       title: 项目
@@ -72,7 +72,7 @@ page:
           button:
             text: Github
             url: https://github.com/Kindle-deep/hugo-theme-Kenny
-  Cdn:
+  Cdn: # 组件
     type: warp #页面类型warp/item
     warp:
       bg: "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)" #页面背景颜色，仅warp可以填写，当为空时输出默认
@@ -86,7 +86,7 @@ page:
         text: Pix主题
         url: https://pixit.cn/
       img: /img/cdn.png #图片
-  媒体:
+  媒体: # 组件
     type: item
     item:
       title: 联系我
